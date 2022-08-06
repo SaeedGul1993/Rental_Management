@@ -8,7 +8,7 @@ import {FavButtonComponent} from '../../components/FavButton';
 import {CustomGroupComponent} from '../../components/Group';
 import {CustomGoogleMapComponent} from '../../components/GoogleMap';
 import {PlaneButtonComponent} from '../../components/PlaneButton';
-
+import {MapComponent} from '../../components/Map';
 const {width, height} = Dimensions.get('window');
 const CreateJobsScreen = ({navigation}) => {
   const [open, setOpen] = useState(false);
@@ -76,7 +76,8 @@ const CreateJobsScreen = ({navigation}) => {
         <View style={styles.height(10)} />
         <CustomGroupComponent />
         <View style={styles.height(20)} />
-        <CustomGoogleMapComponent />
+        {/* <CustomGoogleMapComponent /> */}
+        <MapComponent />
         <View style={styles.height(20)} />
         <Text style={styles.labelStyle}>{labels.assignJobTo}</Text>
         <View style={styles.lastDropDown}>

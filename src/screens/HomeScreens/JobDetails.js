@@ -4,6 +4,7 @@ import {CustomHeaderComponent} from '../../components/CustomHeader';
 import {CustomGoogleMapComponent} from '../../components/GoogleMap';
 import {CustomGroupComponent} from '../../components/Group';
 import {CustomInputFieldComponent} from '../../components/InputField';
+import {MapComponent} from '../../components/Map';
 import {PlaneButtonComponent} from '../../components/PlaneButton';
 import {labels} from '../../config/labels';
 
@@ -30,7 +31,7 @@ const JobDetailScreen = ({navigation}) => {
       <CustomGroupComponent />
       <View style={styles.height_1(20)} />
       <Text style={styles.labelStyle}>{labels.map}</Text>
-      <CustomGoogleMapComponent />
+      <MapComponent />
       <View style={styles.height_1(20)} />
       <Text style={styles.labelStyle}>{labels.supervisor}</Text>
       <CustomInputFieldComponent

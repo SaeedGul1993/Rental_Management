@@ -7,6 +7,7 @@ import {CustomInputFieldComponent} from '../../components/InputField';
 import {PlaneButtonComponent} from '../../components/PlaneButton';
 import {labels} from '../../config/labels';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import {MapComponent} from '../../components/Map';
 // image-sharp
 // checkmark
 
@@ -27,7 +28,7 @@ const DriverJobDetail = ({navigation}) => {
       </View>
       <View style={styles.height_1(20)} />
       <Text style={styles.labelStyle}>{labels.map}</Text>
-      <CustomGoogleMapComponent />
+      <MapComponent />
       <View style={styles.height_1(20)} />
       <View style={styles.height_1(20)} />
       <Text style={styles.labelStyle}>{labels.group}</Text>
